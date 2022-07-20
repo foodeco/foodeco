@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <title>Google</title>
+
+        <style>
+            body {
+                background-color: #202124; 
+                height: 100vh;
+                max-height: 100vh; 
+                color: white;
+                font-family: arial,sans-serif;
+                margin:0;
+                padding:0;
+                font-size: 0.9em;
+                overflow: hidden;
+            }
+            .header * {
+                color: #fff;
+                text-decoration: none;
+                padding: 5px;
+            }
+            .header {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-grow: 1;
+                height: 60px;
+                padding: 10px;
+                margin-left:15px;
+                padding:0;
+                text-decoration: none;
+                justify-content: space-between;
+                align-items: center;
+                /* min-width:100%; */
+
+            }
+            .header div {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                /* padding: 5px; */
+            }
+            .header div a:hover {
+                text-decoration: underline;
+            }
+            .button {
+                background: rgb(26, 115, 232);
+                padding: 9px 15px;
+                border-radius: 4px;
+                margin: 0 8px;
+                justify-content: center;
+            }
+            .button:hover {
+                background:rgba(26, 115, 232, 0.9);
+            }
+            .button a {
+                margin: 0;
+                padding: 0;
+            }
+            .list {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+            .logo {
+                display: flex;
+                position: relative;
+                flex-direction: row;
+                align-items:flex-end;
+                justify-content:center;
+                max-height: 20em;
+                min-height:92px;
+                height: calc(100vh - 300px);
+                /* top: 5em; */
+                flex-wrap: nowrap;
+                /* flex-shrink: 0; */
+
+            }
+            .search {
+                display: flex;
+                justify-content: center;
+                padding:20px;
+                flex-wrap:nowrap;
+                height:41px;
+
+            }
+            .search >div {
+                display: flex;
+                border: 1px solid #5f6368;
+                width:500px;
+                padding: 10px;
+                align-items: center;
+                border-radius: 24px;
+            }
+            .search > div:hover{
+                background: #5f6368;
+            }
+            .search div div {
+                cursor: pointer;
+                padding: 0 10px;
+            }
+            .search input {
+                all: unset;
+                width:100%;
+                /* background: transparent; */
+            }
+            .add {
+                display: flex;
+                justify-content: center;
+
+            }
+            .add input {
+                all:unset;
+                margin: 11 4;
+                border-radius: 4px;
+                padding: 0 16;
+                font-size: 14px;
+                background: #303134;
+                color:#e8eaed;
+                border: 1px solid #202124;
+                height: 32px;
+            }
+            .add input:hover {
+                border: 1px solid rgb(85,85,85);
+            }
+            .footer {
+                background:#171717;
+                color:#9aa0a6;
+                position: absolute;
+                bottom: 0vh;
+                width: 100%;
+                flex-wrap: wrap;
+                min-width: 100%;
+
+            }
+            .footer_links {
+                display: flex;
+                justify-content: space-between;
+            }
+            .footer > div {
+                padding:15 30;
+                border-bottom: 1px solid #3c4043;
+            }
+            .footer a {
+                all:unset;
+                padding: 15;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+    
+        <div class="header">
+            <div>
+                <a href="#">Google 정보</a>
+                <a href="#">스토어</a>
+            </div>
+            <div>
+                <div>
+                    <a href="#">Gmail</a>
+                    <a href="#">이미지</a>
+                </div>
+                <div class="link">
+                    <div class="list">
+                        <svg style="width:24px;" focusable="false" viewBox="0 0 24 24">
+                            <path fill="#ffffff" d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                            </svg>
+                    </div>
+                    <div class="button"><a href="#" role="button">로그인</a></div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="logo">
+                <div>
+                    <img src="google_img/googlelogo.png" width="272" height="92" alt="google_logo">
+                </div>
+            </div>
+        
+        <div class="search">
+            <div>
+                <div>
+                    <svg style="width:18px;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#9aa0a6" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                </div>
+                <input type="text">
+                <div>
+                    <span class="ly0Ckb"><img class="yAnw3c" src="google_img/tia.png" tia_disable_swap="true" tia_field_name="q" jsname="JyIpdf" data-atf="0" data-frt="0" tia_property="web"></span>
+                </div>
+            </div>
+        </div>
+        <div class="add">
+            <input type="button" value="Google 검색">
+            <input type="button" value="I'm Feeling Lucky">
+        </div>
+        <div class="empty" style="max-height:30%; min-height:10%;; flex-grow: 1;"></div>
+        <div class="footer">
+            <div>
+                대한민국
+            </div>
+            <div class="footer_links">
+                <div>
+                    <a href="#">광고</a>
+                    <a href="#">비즈니스</a>
+                    <a href="#">검색의 원리</a>
+                </div>
+                <div>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">약관</a>
+                    <a href="#">설정</a>
+                </div>
+            </div>
+        </div>
+
+    
+
+    </body>
+</html>
